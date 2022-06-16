@@ -2,7 +2,8 @@ document.addEventListener("DOMContentLoaded", () => {
   let form = document.querySelector("form");
     form.addEventListener("submit", (e) => {
     e.preventDefault()
-    taskLister(e.target.new-task-description.value)
+    // taskLister(e.target.new-task-description.value)
+      taskLister( document.querySelector("#new-task-description").value)
   })
 });
 
